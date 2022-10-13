@@ -1,15 +1,15 @@
 "use strict";
 (function() {
 
-
-function timesFive(inputNum {
-    if (typeof inputNum !== "number") {
-        console.log("This is not a number");
-        return 0;
-    } else {
-        return inputNum * 5;
-    }
-}
+//
+// function timesFive(inputNum {
+//     if (typeof inputNum !== "number") {
+//         console.log("This is not a number");
+//         return 0;
+//     } else {
+//         return inputNum * 5;
+//     }
+// }
 
 // const timesFive = (x) => {
 //     if(parseFloat(x) !== x){
@@ -34,7 +34,32 @@ function timesFive(inputNum {
     // };
     // numMultipliedFive();
 
+//function inBetween() {
+//    if(min - max < num)return true;
+// var min = Math.min.apply(Math[a,b]),
+// var max = Math.max.apply(Math,[a, b]);
+//     return this > min && this < max;
+// };
+//
 
+    // function inBetween(min, max, num){
+    //     let boolean;
+    //     if(num < max && num > min){
+    //         boolean = true;
+    //         return boolean;
+    //     }else{
+    //         return false;
+    //     }
+    // }
+    //
+
+    function inBetween(min, max, num) {
+        return num < max && num > min;
+
+    }
+    console.log(inBetween(5,10,7))
+    // console.log(num < max;)
+    // return num < max && num > min;
 
 
 
