@@ -12,7 +12,7 @@ while(num < = 65536){
 //     console.log(`${soldCones}cones sold...`)
 //     allCones -= soldCones;
 // }else{
-//     console.log("Cannot sell you " + soldCones + " cones I only have ")
+//     console.log("Cannot sell you " + soldCones + " cones I only have " + allCones)
 // }
 //
 // }while(allCones !== 0)
