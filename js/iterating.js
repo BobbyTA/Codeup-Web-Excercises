@@ -1,47 +1,58 @@
 (function(){
     "use strict";
 
-    /**
-     * TODO:
-     * Create an array of 4 people's names and store it in a variable called
-     * 'names'.
-     */
+   let  name = ["bobby", "elliana", "analisia", "marina"];
+    console.log(name.length);
+    console.log(name[0]);
+    console.log(name[1]);
+    console.log(name[2]);
+    console.log(name[3]);
 
-    /**
-     * TODO:
-     * Create a log statement that will log the number of elements in the names
-     * array.
-     */
+    for(let i = 0; i < 5 ; i++){
+        console.log(i);
+    }
 
-    /**
-     * TODO:
-     * Create log statements that will print each of the names individually by
-     * accessing each element's index.
-     */
+    //accessing array elements by using opeing and closing square bracket
+//name.forEach(function(name){})
+name.forEach(function(element, index, array ){
+        console.log(name)
+    })
 
-    /**
-     * TODO:
-     * Write some code that uses a for loop to log every item in the names
-     * array.
-     */
+//name.forEach(name => console.log(name));
 
-    /**
-     * TODO:
-     * Refactor your above code to use a `forEach` loop
-     */
+//
+// let first = [1,2,3,4,5]
+// for (let i=0; i<5; i++)
+//     console.log(i)
+//
+//
+//     function first(arr) {
+//         return arr[0];
+//     }
+//     function second(arr){
+//         return arr[1];
+//     }
+//     function third(arr){
+//         return arr[array.lenth -1];
+//     }
+//
+//     let firstIndex = first(name);
+//     console.log(firstIndex)
+//     console.log(second(name));
+//     console.log(third(name));
 
-    /**
-     * TODO:
-     * Create the following three functions, each will accept an array and
-     * return an an element from it
-     * - first: returns the first item in the array
-     * - second: returns the second item in the array
-     * - last: returns the last item in the array
-     *
-     * Example:
-     *  > first([1, 2, 3, 4, 5]) // returns 1
-     *  > second([1, 2, 3, 4, 5]) // returns 2
-     *  > last([1, 2, 3, 4, 5]) // return 5
-     */
+let questionOne = [1,2,3,4,5]
+for(let i = 0 ; i < 6 ; i++)
+    console.log(questionOne[0]);
+
+let questionTwo = [1,2,3,4,5]
+    for(let i = 0; i <= 4 ; i++)
+        console.log(questionTwo[1]);
+
+    let questionThree = [1,2,3,4,5]
+    for(let i = 0; i<=5; i++)
+        console.log(questionThree[4]);
+
+
 
 })();
