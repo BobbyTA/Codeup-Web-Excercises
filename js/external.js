@@ -51,6 +51,3 @@ alert(itemsBought > 2 || isPremium && !offer);
 
 //items bought is greater than two. the other fact is premium membership.
 //it is (not) !offer because we are checking for an expired offer
-
-
-
