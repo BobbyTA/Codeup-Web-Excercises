@@ -61,6 +61,14 @@
     // console.log(num < max;)
     // return num < max && num > min;
 
+    //create a function named typePrinter that accepts
+    //an array as a an input, and logs the data type
 
-
+let arr = [true, "Icon", 25, "66",false,0];
+function typePrinter(userArr){
+for(let i = 0; i < userArr.length; i++){
+    console.log(typeof userArr[i])
+}
+}
+typePrinter(arr);
 })();
