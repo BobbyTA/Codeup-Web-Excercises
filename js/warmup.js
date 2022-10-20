@@ -71,4 +71,60 @@ for(let i = 0; i < userArr.length; i++){
 }
 }
 typePrinter(arr);
+
+
+
+
+
+// function average(){
+//     function calculateAverageOfArray(array) {
+//         var total = 0;
+//         var count = 0;
+//
+//         jQuery.each(arry, function(index, value) {
+//             total += value;
+//             count++;
+//         });
+//
+//         return total / count;
+//     }
+//
+//     console.log(calculateAverageOfArray(arry));
+//     //-from (flexiple.com)
+// }
+function isNumeric(input){
+    return !isNaN(parseFloat(input));
+}
+    function average(array){
+    let i = 0;
+    let sum = 0;
+    while(i < array.length){
+        if(isNumeric(array[i])) {
+            sum += parseFloat(array[i]);
+            i++;
+        }else{
+            return false;
+        }
+    }
+    return sum / array.length;
+}
+
+function averag(input){
+    let sum =0;
+    for(let i=0; i< input.length; i==){
+        if(isNumeric(input[i])){
+            sum += parseFloat(input[i])
+        }else{
+            return false;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 })();
