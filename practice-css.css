@@ -1,0 +1,70 @@
+/*Element Selector*/
+
+h1, h2, h3{
+    color: aqua;
+
+}
+/*Class Selector*/
+.underline, italicize {
+    text-decoration: underline;
+    font-size: 15px
+}
+
+
+/*ID Selector*/
+#font26{
+    font-size: 26px;
+
+}
+
+/*Multiple selectors - comma seperated*/
+h2, h3, h4{
+    color: olivedrab;
+    font-family: "Comic Sans MS" sans-serif;
+}
+
+p,underline{
+    background-color:orange;
+}
+
+#list .nationparks {
+    color: forestgreen;
+}
+#list>div>colors {
+    color:cornflowerblue;
+}
+
+/*Direct Child Selector - seperated by > */
+#list>div>.colors{
+    color:coral;
+}
+
+li.highlight{
+    font-weight: bold
+}
+/*unvisited link(:link)*/
+a:link{
+    color:red;
+}
+/*visit link (:visited)*/
+a:visted{
+    color:black;
+/*when hovering over link (:hover)    */
+}a:hover{
+     color:blue;
+ /*   active/selected link (:active)*/
+ }a:active{
+      color:green;
+  }
+
+/* rgba (red,green,blue,% opacity)  */
+.teambuilding {
+    background-image: url("..https://images.pexels.com/photos/240572/pexels-photo-240572.jpeg");
+    background-size: cover;
+    /*units of measurement = em,vw,*/
+    height 600px;
+    width 400px;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+
+}
