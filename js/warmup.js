@@ -122,9 +122,18 @@ function averag(input){
 
 
 
+const filterNegativity = (arr) => {
+    let postiveArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            postiveArray.push(arr[i]);
 
 
+        }
 
+    }return postiveArray;
+}
+    console.log(filterNegativity([5,-6,2,0,-5,-13]));
 
 
 })();
