@@ -14,9 +14,15 @@
   let max = 10;
   let interval = 1000;
 
-  setInterval(function(){
-    console.log("Hello");
-  }, 5000)
+  // setInterval(function(){//      function that returns hello every 5 seconds
+  //   console.log("Hello");
+  // }, 5000)//                     5000 is equal to 5 seconds
+
+  var intervalId = setInterval(function(){//       this function takes our interval equal to 1000
+    count++;
+    console.log("Repeating this line" + count)
+  } ,interval)
+
 </script>
 
 </body>
