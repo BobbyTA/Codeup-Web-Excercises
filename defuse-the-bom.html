@@ -6,29 +6,31 @@
 </head>
 <body>
 <h2 id="message">
-  "This B-O-M will self destruct in "
+  "ALERT! ALERT! This B-O-M will self destruct in "
   <span id="timer">5</span>
   " seconds..."
 </h2>
-<button id="defuser">Desfuse the B-O-M</button>
+<button id="defuser">click here to Defuse the B-O-M</button>
 <script>
-  (function(){
+  (function() {
     "use strict";
     var detonationTimer = 5;
 
-    function updateTimer(){
-      if(detonationTimer == 0) {
-        alert("EXTERMINATE!");
-        document.body.innerHTML = "";
-      }else if (detonationTimer > 0){
+
+        setInterval(function updateTimer() {
+        if(detonationTimer === 0) {
+        alert('KLAABOOOM!');
+        document.body.innerHTML = '';
+      } else if (detonationTimer > 0){
         document.getElementById("timer").innerHTML = detonationTimer;
       }
       detonationTimer--;
-    }
-    function defuseTheBom(){
+    }, 1000);
 
+    function defuseTheBom(){
+clearTimeout(detonationTimer);
     }
-    var defuser = document.getElementById(("defuser");
+    var defuser = document.getElementById('defuser');
     defuser.addEventListener("click", defuseTheBom);
 
   })();
