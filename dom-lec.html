@@ -6,9 +6,49 @@
 </head>
 <body>
 <h1 id="header">Welcome to my page!</h1>
+<!--<h1 id="header">Welcome to my page! <span> this is my span</span<h1>-->
 
 <p class="content">Here is my content!</p>
 
 <p class="content">This is pt.2 of my content</p>
+<script>
+  let header = document.getElementById("header");
+  console.log(header)
+
+
+  //Getting elements by ID name
+  //let header = document.getElementById("header");
+  //console.log(header)
+  //console.log(document.getElementById("html")
+
+  //getting elements by Class name
+  //let content = document.getElementsByClassName("content");
+  //console.log(content[0]);
+//  for(let i = 0, i < content.length; i ++){
+ //   console.log(contenet[i]);
+//  }
+ // console.log(typeof content)
+
+
+  //get element by tag name
+ // console.log(document.getElementsByTagName("p"))
+ //  let arr = [1,0,2]
+ //  let header =document.getElementsById("header")
+ //  header.innerHTML = arr;
+ //  console.log(header.innerHTML)
+ //  console.log(header.innerText)
+ //
+ //  let paragraphs = document.getElementsByTagName("p");
+ //  for(let i = 0; i < paragraphs.length; i++){
+ //      paragraphs[0].getAttribute("data-id1")
+//  } modifiying styles using dom
+  let pTags = document.getElementsByClassName("content");
+  for(let i =0; i < pTags.length; i++){
+      console.log(pTags[i].getAttribute("data-id1"));
+ pTags[i].style.color ="blue";
+ pTags[i].style.background = "grey";
+  }
+
+</script>
 </body>
 </html>
