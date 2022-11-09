@@ -25,6 +25,11 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button type="button" id="headerBtn">Change header</button>
+<button type="button" id="subheaderBtn">make sub header blue</button>
+<button type="button" id="liBtn">li button</button>
+<button type="button" id="subparaphBtn">Change subparagraph text</button>
+
 <script>
     (function() {
         "use strict";
@@ -32,8 +37,10 @@
         var mainHeader = document.getElementById("main-header");
         console.log(mainHeader);
 
+        document.getElementById('headerBtn').addEventListener('click', function () {
+            mainHeader.innerHTML = "JavaScript is Cool";
+        })
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
         console.log(mainHeader.innerHTML);
 
         // TODO: Uncomment the next line and get the sub header element by id
@@ -43,33 +50,64 @@
 
         // TODO: Set the text color of subHeader to blue
         // subHeader.style['color'] = 'blue';
-        subHeader.style.color= "blue"
-
+        //subHeader.style.color= "blue"
+        let subheaderBtn = document.getElementById('subheaderBtn')
+        subheaderBtn.style.color = "color";
+        subheaderBtn.addEventListener('click', function () {
+            subHeader.style.color = "blue"
+        })
         // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName("li");
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
+        document.getElementById('liBtn').addEventListener('click', function () {
+            for (let i = 0; i < listItems.length; i += 2) {
+                // if(i % 2 === 0) {
+                listItems[i].style.color = "grey";
+                // }
+                if (listItems[i].getAttribute("data-dbid") === "1") {
+                    listItems[i].style.color = "blue";
+                }
+            }
+        })
 
-
-        for (let i=0; i<listItems.length; i+=2) {
-            listItems[i].style.color = 'grey'
-        }for (let i=1; i<listItems.length; i+=2) {
-            listItems[i].style.color = 'blue'
-        }
         // TODO: Set text color of li with dbid = 1 to blue
+        // listItems[0].style.color = "blue";
+
+        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        console.log(subParagraphs)
+        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        let subParagraphButton = document.getElementById('subparagraphBtn');
+        subParagraphButton.addEventListener('click', function () {
+            subParagraphs[0].innerHTML = "Mission Accomplished!";
+        })
+
+        document.getElementsByTagName('html')[0].addEventListener('keyup', function () {
+            console.log("event fired");
+            console.log("Key was released");
+        })
 
 
+        // for (let i=0; i<listItems.length; i+=2) {
+        //     listItems[i].style.color = 'grey'
+        // }for (let i=1; i<listItems.length; i+=2) {
+        //     listItems[i].style.color = 'blue'
+        // }
+        // // TODO: Set text color of li with dbid = 1 to blue
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
 
-        function FissionMailed(){
-            let subParagraphs = document.querySelectorAll(".sub-paragraph");
-            subParagraphs[0].innerText = "Mission Accomplished!";
-        };
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-    })();
+        // function fissionMailed() {
+        //     let subParagraphs = document.querySelectorAll(".sub-paragraph");
+        //     subParagraphs[0].innerText = "Mission Accomplished!";
+
+
+        //  fourthBtn.addEventListener('click', (mouseover) => {
+        //    fissionMailed().textContent = "Mission Accomplished!";
+
+    }());
 </script>
 </body>
 </html>

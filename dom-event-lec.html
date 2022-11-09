@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name ="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1,0">
+    <meta http-equiv="">
+    <title>Title</title>
+</head>
+<body>
+<h1> GAME RATING WEBSITE!</h1>
+
+<img id="game1" scr="css/image/zelda.png" alt="game1">
+<img id="game2" scr="css/image/timesplitters.png" alt="game2">
+<img id="game3" scr="css/image/wwf.png" alt="game3">
+
+
+<button type="button" id="dark mode">dark mode</button>
+<script>
+    //selected button by id
+    let btn =document.getElementById("dark-mode");
+    //button has click event attached
+    btn.addEventListener('click', function (){
+        console.log('event listener fired off');
+        let html = document.getElementsByTagName('htmlFile');
+        html[0].style['background-color'] = 'black'
+    });
+</script>
+</body>
+</html>
