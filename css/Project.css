@@ -108,3 +108,20 @@ h2{
         background-color: #333; /* Modern Browsers */
     }
 }
+
+body {
+    background-image: url("https://i.ytimg.com/vi/LQy3shcGL9s/maxresdefault.jpg");
+}
+
+function addUserCoffee(input){
+var id = coffee.length;
+var name = coffee.inputName.value.toString();
+var roast = coffee.inputRoast.value.toString();
+input = { id: addId, name: addName, roast: addRoast;}
+coffee.unshift(input)                //(posibly push)
+tbody.innerHTML = rendercoffees(coffee);
+}
+
+col-md-12{
+flex-direction: row-reverse;
+}

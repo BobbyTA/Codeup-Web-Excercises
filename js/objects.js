@@ -12,6 +12,12 @@
     console.log(person.firstName);
     console.log(person.lastName);
     console.log(person.sayHello());
+    console.log(10 %3)
+
+    var i =0
+    while(i<=10){
+        console.log(i);i++;
+    }
 
 
 

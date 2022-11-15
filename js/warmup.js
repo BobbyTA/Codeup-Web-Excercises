@@ -135,5 +135,4 @@ const filterNegativity = (arr) => {
 }
     console.log(filterNegativity([5,-6,2,0,-5,-13]));
 
-
 })();
