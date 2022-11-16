@@ -26,7 +26,26 @@
         // alert(h1Contents);
 
         //another to select the three selectors h1, p, and li
-        $('h1, p, li').css('background-color', 'yellow');
+        //$('h1, p, li').css('background-color', 'yellow');
+        //
+        // $('h1').click(function(){
+        //     $('h1').css('background-color', 'green');
+        // });
+        //
+        // $('p').dblclick(function(){
+        //     $('p').css('font-size', '18px');
+        // });
+
+        $('li').hover(
+            function() {
+                $(this).css('color', 'red');
+            },
+            function() {
+                $(this).css('color', 'black');
+            }
+        );
+
+        //     Set all li text color to red when the mouse is hovering; reset to black when it is not.
 
     })
 //$('selector').html("value changed to")
