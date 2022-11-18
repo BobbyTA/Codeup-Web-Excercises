@@ -63,10 +63,29 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
 <script>
-
   $('.toggle-link').click(function(event){
     event.preventDefault();
     $('dd').toggleClass('invisible');
+  })
+
+  $('dt').click(function(event){
+    $(this).css('background-color', 'yellow');
+  })
+  $('h3').click(function(){
+    $(this).next().css('font-weight', 'bold');
+    //console.log($(this).next());
+  })
+
+  $('li').click(function(){
+    $(this).parent().children().first().css('color', 'blue');
+    //console.log($(this).next());
+  })
+
+  $('button').click(function(event){
+    event.preventDefault();
+    $('ul').each(function(){
+      $(this).children().last().css('background-color', 'yellow');
+    });
   })
 
 
