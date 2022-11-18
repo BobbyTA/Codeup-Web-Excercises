@@ -39,16 +39,11 @@
     $(document).keyup(checkCode);
 
     function checkCode(i) {
-        console.log(event.keyCode);
-
         let keyPressed = keys[i.keyCode];
-
         if (keyPressed === konamiCode[keyCount]) {
             keyCount++;
-
             if (keyCount === konamiCode.length) {
                 codeActivated();
-                resetKey();
             }
         } else {
             resetKey();
