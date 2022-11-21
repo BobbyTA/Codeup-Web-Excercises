@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1c85014-208f-46fc-abb9-f73e031ff047" name="Changes" comment="log">
+      <change afterPath="$PROJECT_DIR$/css/Mapbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/mapbox_lecture.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mapbox_lecture.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/js/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/html/intro-js.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2FihPHoWihOFSp2mJJftL9LKpFj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bta/IdeaProjects/codeup-web-excercises&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/html" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.functions-lec.js">
+    <configuration name="external.js.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-excercises/js/external.js.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="intro-js.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/codeup-web-excercises/html/intro-js.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="functions-lec.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="functions-lec.js" working-dir="$PROJECT_DIR$/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.functions-lec.js" />
+        <item itemvalue="JavaScript Debug.external.js.html" />
+        <item itemvalue="JavaScript Debug.intro-js.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1c85014-208f-46fc-abb9-f73e031ff047" name="Changes" comment="" />
+      <created>1664980786918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664980786918</updated>
+      <workItem from="1664980791901" duration="12356000" />
+      <workItem from="1665065108734" duration="54402000" />
+      <workItem from="1665606622778" duration="3265000" />
+      <workItem from="1665672158432" duration="3900000" />
+      <workItem from="1665676452223" duration="8811000" />
+      <workItem from="1665755249983" duration="234000" />
+      <workItem from="1665756098107" duration="8095000" />
+      <workItem from="1665774006447" duration="6776000" />
+      <workItem from="1665781216782" duration="2268000" />
+      <workItem from="1666015443058" duration="1034000" />
+      <workItem from="1666016884750" duration="412000" />
+      <workItem from="1666017347179" duration="12579000" />
+      <workItem from="1666110777133" duration="10254000" />
+      <workItem from="1666144001172" duration="305000" />
+      <workItem from="1666144957982" duration="24298000" />
+      <workItem from="1666381754181" duration="4498000" />
+      <workItem from="1666387361867" duration="553000" />
+      <workItem from="1666388752720" duration="746000" />
+      <workItem from="1666585807216" duration="1553000" />
+      <workItem from="1666587422260" duration="60000" />
+      <workItem from="1666620944184" duration="7350000" />
+      <workItem from="1666646287884" duration="2200000" />
+      <workItem from="1666706714040" duration="32000" />
+      <workItem from="1666706768899" duration="17000" />
+      <workItem from="1666706796037" duration="1444000" />
+      <workItem from="1666717252551" duration="5708000" />
+      <workItem from="1666836652398" duration="317000" />
+      <workItem from="1667400189407" duration="49000" />
+      <workItem from="1667400337068" duration="34000" />
+      <workItem from="1667400397680" duration="17000" />
+      <workItem from="1667400479993" duration="35000" />
+      <workItem from="1667400545701" duration="62000" />
+      <workItem from="1667400617193" duration="9000" />
+      <workItem from="1667400751478" duration="14000" />
+      <workItem from="1667400835441" duration="47000" />
+      <workItem from="1667400922557" duration="7251000" />
+      <workItem from="1667425753632" duration="762000" />
+      <workItem from="1667485549299" duration="10613000" />
+      <workItem from="1667506101207" duration="446000" />
+      <workItem from="1667508636442" duration="2485000" />
+      <workItem from="1667579855999" duration="1821000" />
+      <workItem from="1667832623545" duration="498000" />
+      <workItem from="1667838172035" duration="15505000" />
+      <workItem from="1668007546948" duration="6702000" />
+      <workItem from="1668095607477" duration="2017000" />
+      <workItem from="1668101655028" duration="335000" />
+      <workItem from="1668110096892" duration="1335000" />
+      <workItem from="1668398106678" duration="13000" />
+      <workItem from="1668453590316" duration="17000" />
+      <workItem from="1668456006524" duration="3000" />
+      <workItem from="1668524597406" duration="3000" />
+      <workItem from="1668542458186" duration="419000" />
+      <workItem from="1668542892901" duration="52000" />
+      <workItem from="1668542960125" duration="388000" />
+      <workItem from="1668543356085" duration="2858000" />
+      <workItem from="1668613770075" duration="9637000" />
+      <workItem from="1668791550149" duration="3283000" />
+      <workItem from="1668833699484" duration="296000" />
+      <workItem from="1668995264739" duration="3000" />
+      <workItem from="1669043314953" duration="3723000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
