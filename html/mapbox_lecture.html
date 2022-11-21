@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lemonada&display=swap" rel="stylesheet">
+    <script src = "../js/mapbox-geocoder-utils.js"></script>
 
     <!-- Custom CSS -->
     <style>
@@ -51,6 +52,18 @@
         .addTo(map)
 
     marker.setPopup(popup)
+
+    geocode("900 Jackson St #410, Dallas TX 75202", MAPBOX_TOKEN).then(function(result){
+        console.log(result);
+        map.setCenter(result);
+        map.setZoom(20)
+    });
+
+    // reverse geocode method from mapbox-geocoder-utils.js
+    reverseGeocode({lng: -96.802944,  lat: 32.777995}, MAPBOX_TOKEN).then(function(results) {
+        // logs the address for The Alamo
+        console.log(results);
+    });
 </script>
 </body>
 <footer><h2>Dead Men Tell No Tales</h2>  </footer>
