@@ -2,6 +2,19 @@ h1{
     color: red;
     font-family: 'Bubblegum Sans', cursive;
     text-decoration: underline;
-    text-decoration-color: black;
-    content: "\2620"
+    font-size: xxx-large;
+    text-decoration-color: red;
+    content: "\2620";
+}
+h2{
+    color: red;
+    font-family: 'Bubblegum Sans', cursive;
+    text-decoration: underline;
+    font-size: xxx-large;
+    text-decoration-color: red;
+    content: "\2620";
+    text-align: center;
+}
+body{
+    background-color:black;
 }
