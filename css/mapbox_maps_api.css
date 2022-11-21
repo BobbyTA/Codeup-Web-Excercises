@@ -1,0 +1,10 @@
+body {
+    background-color: green;
+}
+.stretch {
+    width: 100%;
+    background: transparent;
+}
+.checked {
+    color: orange;
+}

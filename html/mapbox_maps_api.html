@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bobby's Favorite Restaurant </title>
+    <!-- Mapbox CSS -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <link href='/css/mapbox_maps_api.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="mapbox://styles/bobbyta/clardavdx000j14ql6ac9yt2d"></script>
+    <!-- Custom CSS -->
+    <style>
+        #map {
+            /* the width and height may be set to any size */
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+<body><h1>Bobby's Favorite Chinese Food</h1>
+
+<img src='../css/image/dragon.jpeg' class="stretch">
+
+
+<!-- The HTML element that serves as the Mapbox container -->
+<div id='map'></div>
+
+<!-- Mapbox JS -->
+<script src="../js/keys.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+<!-- Custom JS -->
+<script>
+    mapboxgl.accessToken = MAPBOX_TOKEN;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9/',
+        zoom: 10,
+        center: [-97.28981, 32.89682]
+    });
+    var markerA = new mapboxgl.Marker()
+        .setLngLat([-97.28981, 32.89682])
+        .addTo(map)
+    var popupA = new mapboxgl.Popup()
+        .setHTML("<img src=\"../css/image/tang.jpeg\"><h1>Tangs Pacific Bistro</h1><p>Bobby's Stamp of Approval </p>")
+
+
+    var markerB = new mapboxgl.Marker()
+        .setLngLat([-97.41869, 32.81255,])
+        .addTo(map)
+    var popupB = new mapboxgl.Popup()
+        .setHTML("<img src=\"../css/image/buffet.jpeg\"><h1>Panda Buffet</h1><p>A Great Deal!</p>")
+
+    var markerC = new mapboxgl.Marker()
+        .setLngLat([-97.42148, 32.81200])
+        .addTo(map)
+    var popupC = new mapboxgl.Popup()
+        .setLngLat([-97.42148, 32.81200])
+        .setHTML("<img src=\"../css/image/skillman.jpeg\"><h1>New Skillman Wok</h1><p>Excellent Crab Ragoons!</p>")
+
+    markerA.setPopup(popupA)
+    markerB.setPopup(popupB)
+    markerC.setPopup(popupC)
+
+</script>
+</body>
+<footer>
+    <marquee>"I love this place. Always great food, great service, and absolutely most amazing drinks and prices."-Ettore <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br> "I
+        have only eaten there at lunch, but the lunch specials are a great price for a wonderful meal. The salad is a
+        fun surprise, the soup always tasty, and the entree well done. There are never enough people eating there, so if
+        you are close, stop in and try it."-Stephen <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br> "Clean and friendly atmosphere Wait staff was very good. The food was hot and fresh
+        I ordered the fried rice with chicken and veggies. I highly recommend this place"-john<span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </marquee>
+
+</footer>
+
+</html>
