@@ -1,1 +1,2 @@
 const MAPBOX_TOKEN = "pk.eyJ1IjoiYm9iYnl0YSIsImEiOiJjbGFxeHhvOWwwejF5M25wcmp0MzUxejY4In0.R0rTkaxOPO0IPrHnI7lYHg";
+const OPEN_WEATHER_APPID = "93a420f3b1d1bebcba285af7803a0fc9";
