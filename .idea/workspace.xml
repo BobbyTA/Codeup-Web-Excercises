@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c85014-208f-46fc-abb9-f73e031ff047" name="Changes" comment="log">
-      <change afterPath="$PROJECT_DIR$/css/mapbox_maps_api.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/mapbox_maps_api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/ajax_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ajax-store.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ajax-store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/mapbox_maps_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mapbox_maps_api.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
       <list>
         <option value="package.json" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -149,7 +150,12 @@
       <workItem from="1668791550149" duration="3283000" />
       <workItem from="1668833699484" duration="296000" />
       <workItem from="1668995264739" duration="3000" />
-      <workItem from="1669043314953" duration="14039000" />
+      <workItem from="1669043314953" duration="14124000" />
+      <workItem from="1669076372255" duration="235000" />
+      <workItem from="1669131538406" duration="65000" />
+      <workItem from="1669133310531" duration="186000" />
+      <workItem from="1669147411861" duration="632000" />
+      <workItem from="1669993907550" duration="370000" />
     </task>
     <servers />
   </component>
