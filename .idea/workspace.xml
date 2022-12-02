@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c85014-208f-46fc-abb9-f73e031ff047" name="Changes" comment="log">
-      <change afterPath="$PROJECT_DIR$/html/ajax_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/ajax-store.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ajax-store.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/ajax_lec.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ajax_lec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/mapbox_maps_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mapbox_maps_api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/weathermap.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/weathermap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +153,7 @@
       <workItem from="1669131538406" duration="65000" />
       <workItem from="1669133310531" duration="186000" />
       <workItem from="1669147411861" duration="632000" />
-      <workItem from="1669993907550" duration="738000" />
+      <workItem from="1669993907550" duration="1338000" />
     </task>
     <servers />
   </component>
