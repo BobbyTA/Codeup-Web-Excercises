@@ -5,6 +5,7 @@
       <change afterPath="$PROJECT_DIR$/html/ajax_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/ajax-store.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ajax-store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ajax_lec.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ajax_lec.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/mapbox_maps_api.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/mapbox_maps_api.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +156,7 @@
       <workItem from="1669131538406" duration="65000" />
       <workItem from="1669133310531" duration="186000" />
       <workItem from="1669147411861" duration="632000" />
-      <workItem from="1669993907550" duration="370000" />
+      <workItem from="1669993907550" duration="738000" />
     </task>
     <servers />
   </component>
