@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c85014-208f-46fc-abb9-f73e031ff047" name="Changes" comment="log">
+      <change afterPath="$PROJECT_DIR$/html/promises.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/promises.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,9 +15,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -152,7 +154,7 @@
       <workItem from="1669131538406" duration="65000" />
       <workItem from="1669133310531" duration="186000" />
       <workItem from="1669147411861" duration="632000" />
-      <workItem from="1669993907550" duration="12392000" />
+      <workItem from="1669993907550" duration="13227000" />
     </task>
     <servers />
   </component>
