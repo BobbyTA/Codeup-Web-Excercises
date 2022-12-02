@@ -1,4 +1,29 @@
 .fancy-header {
     color: purple;
     text-decoration: underline;
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+    color: purple;
+}
+html{
+    background-color: bisque;
+    background-image: url("https://s7d2.scene7.com/is/image/PetSmart/5330218?$pdp-placeholder-desktop$");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS";
+}
+
+ul{
+    list-style-type: square;
+}
+
+table{
+    font-size: 25px;
+    padding: 20px;
+}
+
+a:visited{
+    color: red;
 }
