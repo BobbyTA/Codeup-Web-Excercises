@@ -1,7 +1,33 @@
-body{
+#map-leaflet {
+    width: 100%;
+    height: 600px;
+}
+
+#forecast-div{
+    margin-top: 5em;
+    padding-right: 2em;
+
+}
+#navbar-main{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     background-color: blue;
 }
 
-marquee{
-    background-color: teal;
+
+#mapbox-div{
+    margin-left: 5em;
+    margin-top: 5em;
+    position: fixed;
+}
+/* Background Colors */
+html{
+    background-color: #3B94D9;
+}
+body {
+    background-color: #3B94D9;
+}
+.card{
+    width: 600px;
 }
