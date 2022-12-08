@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c85014-208f-46fc-abb9-f73e031ff047" name="Changes" comment="log">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/weathermap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/weathermap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/weather_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/weather_map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/weathermap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/weathermap.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +156,8 @@
       <workItem from="1669133310531" duration="186000" />
       <workItem from="1669147411861" duration="632000" />
       <workItem from="1669993907550" duration="14507000" />
-      <workItem from="1670274548342" duration="12531000" />
+      <workItem from="1670274548342" duration="13673000" />
+      <workItem from="1670377135015" duration="5295000" />
     </task>
     <servers />
   </component>

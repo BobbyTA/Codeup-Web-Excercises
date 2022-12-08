@@ -1,76 +1,94 @@
-"use strict"
-
-let weatherAPI = "http://api.openweathermap.org/data/2.5/forecast";
-let accessToken = MAPBOX_TOKEN;
 mapboxgl.accessToken = MAPBOX_TOKEN;
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v12', // style URL
+    center: [-97.2, 32.89], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+
+$("#button").click(function findCoordinates() {
+
+    geocode($("#search-bar").val(), MAPBOX_TOKEN, map).then(
+        function getLatLong(coordinates) {
+
+            map.setCenter(coordinates)
+
+            map.setZoom(14)
+
+            let marker = new mapboxgl.Marker({draggable: true})
+            marker.setDraggable(coordinates)
+                .setLngLat([coordinates[0], coordinates[1]])
+                .addTo(map)
+
+            marker.on('dragend' , () => {
+                const lngLat = marker.getLngLat();
+                let coordinates = lngLat.toArray()
+
+                weatherData(coordinates)
+            });
 
 
-let map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/navigation-night-v1',
-    zoom: 10,
-    center: [-96.802944, 32.777995]
+
+            weatherData(coordinates)
+        });
+
+    //
 
 });
 
 
+function geocode(search, token) {
+    var baseUrl = 'https://api.mapbox.com';
+    var endPoint = '/geocoding/v5/mapbox.places/';
+    return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+        .then(function(res) {
+            return res.json();
+        }).then(function(data) {
+            return data.features[0].center;
+        });
+}
+// REVERSE GEO CODE //
+function reverseGeocode(coordinates, token) {
+    var baseUrl = 'https://api.mapbox.com';
+    var endPoint = '/geocoding/v5/mapbox.places/';
+    return fetch(baseUrl + endPoint + coordinates.lng + "," + coordinates.lat + '.json' + "?" + 'access_token=' + token)
+        .then(function(res) {
+            return res.json();
+        })
+        .then(function(data) {
+            return data.features[0].place_name;
+        });
+}
 
-$.get("http://api.openweathermap.org/data/2.5/forecast", {
-    APPID: OPEN_WEATHER_APPID,
-    q:     "Dallas, US",
-    units: "imperial",
-    cnt: 7,
-
-
-}).done(function(data) {
-    for(let i = 0; i <= data.length;  i+=8){
-    };
-});
-
-map.addControl(new mapboxgl.NavigationControl());
-
-$('#search-btn').click(() => {
-    const search = $('#search-input').val()
-    geocode(search, mapboxgl.accessToken).then((location) => {
-        map.setCenter(location)
-        map.setZoom(11)
-
-        let marker = new mapboxgl.Marker()
-            .setLngLat([location[0], location[1]])
-            .addTo(map)
-    })
-    ajaxCall(location)
-    revGeo(location[0], location[1])
-
-
-});
-
-let ajaxCall = (arr) => {
-    $.get(weatherAPI, {
+function weatherData(coordinates) {
+    $.get("http://api.openweathermap.org/data/2.5/forecast", {
         APPID: OPEN_WEATHER_APPID,
-        lat: arr[1],
-        lon: arr[0],
-        units: "imperial"
+        lat: coordinates[1],
+        lon: coordinates[0],
+        units: "imperial",
+        exclude: 'minutely,hourly,current,alerts'
     }).done(function (data) {
 
+        //appending the weather
         let forecasts = data.list
-        let forecastHTML = append(forecasts)
-        $('#weather').html(forecastHTML)
+        let appendedForecast = append(forecasts);
+        $('#card').html(appendedForecast);
 
+        //Rendering City Name
         let city = data.city.name
         let country = data.city.country
         $('#city-name').html(`${city}, ${country}`);
-    })
 
+
+    }).fail(function (jqXhr, status, error) {
+        console.log(jqXhr);
+        console.log(status);
+        console.log(error);
+    });
 }
 
-$.get("http://api.openweathermap.org/data/2.5/weather", {
-    APPID: OPEN_WEATHER_APPID,
-    lat:    29.423017,
-    lon:   -98.48527,
-    units: "imperial"
-}).done(function(data) {
- let html = ``
+let append = function (data) {
+    let html = ``
     for (let i = 0; i < data.length; i += 8) {
         const {
             dt_txt,
@@ -80,7 +98,9 @@ $.get("http://api.openweathermap.org/data/2.5/weather", {
         } = data[i]
         html += `
             <div class="card  col-xxl">
-               <h6 class="card-header date text-center ">${dt_txt.substring(5, 7)}/${dt_txt.substring(8, 10)}/${dt_txt.substring(0, 4)}</h6>               
+               <h6 class="card-header date text-center ">${dt_txt.substring(5, 7)}/${dt_txt.substring(8, 10)}/${dt_txt.substring(0, 4)}</h6>
+               <img src='http://openweathermap.org/img/w/${icon}.png' class="img-thumbnail mx-auto d-block border-0 img" ;' alt="image">
+               
               <div class="card-body pt-0">
               <h4 class="card-title text-center">${temp.toFixed(1)}ºF</h4>
                 <div class="d-flex justify-content-around" >
@@ -98,27 +118,5 @@ $.get("http://api.openweathermap.org/data/2.5/weather", {
             </div>`
     }
     return html
-})
-function geoLocation() {
-    const successCallback = (position) => {
-        let lat = (position.coords.latitude)
-        let lng = (position.coords.longitude)
-        let currentLocation = [lng, lat];
-
-    };
-
-    const errorCallback = (error) => {
-    };
-
-    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
-};
-
-
-//reverse geo location function
-let revGeo = (lng, lat) => {
-    reverseGeocode({lng, lat}, MAPBOX_TOKEN).then(function (results) {
-        $('#city').text(`${results}`)
-
-    })
 }
 
